@@ -1,0 +1,4 @@
+[ FUN REC lines (vec (vec bool))  [xss : (vec (vec bool)), m : int, i : int] ( if (lt i (len xss)) (lines (vset xss i (alloc m)) m (add i 1)) 12) ;
+  FUN mat (vec (vec bool)) [n: int, m : int] (lines (alloc n) m (add n 0)); 
+  CONST xss (vec(vec bool)) (mat 1 2); ECHO (len xss)
+]
